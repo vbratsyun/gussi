@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Gussi dev.test</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      <img class="page-header__logo-image" src="img/logo.svg" width="65" height="36" alt="Website logo Gussi.dev.test" />
+    </a>
+  </header>
+  <main class="page-product">
+    <h1 class="visually-hidden">
+      Get acquainted with the new collection of products on the website Gussi
+      dev.test
+    </h1>
+    <!-- Продукты из новой коллекции -->
+    <section class="new-collection">
+      <h2 class="visually-hidden">Products from the new collection</h2>
+      <!-- Карусель -->
+      <section class="new-collection__carousel carousel">
+        <h3 class="visually-hidden">
+          Popular products from the new collection
+        </h3>
+        <div class="carousel__controls controls">
+          <button class="controls__button controls__button--prev" type="button">
+            <span class="visually-hidden">Previous photo</span>
+          </button>
+          <button class="controls__button controls__button--next" type="button">
+            <span class="visually-hidden">Next photo</span>
+          </button>
+        </div>
+        <div class="carousel__product-info product-info">
+          <ul class="product-info__list">
+            <li class="product-info__list-item">
+              <img src="img/carousel/light-coat.jpg" width="600" height="768" alt="The first product." />
+              <h4 class="product-info__list-title">Light coat</h4>
+              <p class="product-info__list-description">
+                More cotton, more freedom
+              </p>
+              <p class="product-info__list-number">01 &mdash; 03</p>
+            </li>
+            <li class="product-info__list-item">
+              <img src="img/carousel/sandy-longsleeve.jpg" width="600" height="768" alt="The second product." />
+              <h4 class="product-info__list-title">Sandy longsleeve</h4>
+              <p class="product-info__list-description">
+                More cotton, more freedom
+              </p>
+              <p class="product-info__list-number">02 &mdash; 03</p>
+            </li>
+            <li class="product-info__list-item">
+              <img src="img/carousel/lime-jacket.jpg" width="600" height="768" alt="The third product." />
+              <h4 class="product-info__list-title">Light coat</h4>
+              <p class="product-info__list-description">
+                More cotton, more freedom
+              </p>
+              <p class="product-info__list-number">03 &mdash; 03</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Параметры новой коллекции -->
+      <section class="new-collection__parameters parameters">
+        <h3 class="visually-hidden">New collection options</h3>
+
+        <!-- Стиль -->
+        <div class="parameters__fashion fashion">
+          <h4 class="parameters-title">New collection</h4>
+          <p class="fashion__title">Gussi light coat</p>
+          <p class="fashion__description">
+            It takes you from the party to the after party with its
+            fashion-forward styles. A playfull blendof retro and modern
+            outdoor design.
+          </p>
+        </div>
+
+        <!-- Общие параметры -->
+        <div class="parameters__container">
+          <!-- Цвет -->
+          <div class="parameters__colour">
+            <h4 class="parameters-title">Colour</h4>
+            <ul class="parameters__colour-list colour-list">
+              <li class="colour-list__item">
+                <button class="colour-list__button colour-list__button--dark-blue" type="button">
+                  <span class="visually-hidden">Dark blue</span>
+                </button>
+              </li>
+              <li class="colour-list__item">
+                <button class="colour-list__button colour-list__button--gray" type="button">
+                  <span class="visually-hidden">Gray</span>
+                </button>
+              </li>
+              <li class="colour-list__item">
+                <button class="colour-list__button colour-list__button--blue" type="button">
+                  <span class="visually-hidden">Blue</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Размер -->
+          <div class="parameters__size">
+            <h4 class="parameters-title">Size</h4>
+            <ul class="parameters__size-list size-list">
+              <li class="size-list__item">
+                <button class="size-list__button size-list__button--xs" type="button">
+                  <span class="size-list__text">XS</span>
+                </button>
+              </li>
+              <li class="size-list__item">
+                <button class="size-list__button size-list__button--s" type="button">
+                  <span class="size-list__text">S</span>
+                </button>
+              </li>
+              <li class="size-list__item">
+                <button class="size-list__button size-list__button--m" type="button">
+                  <span class="size-list__text">M</span>
+                </button>
+              </li>
+              <li class="size-list__item">
+                <button class="size-list__button size-list__button--l" type="button">
+                  <span class="size-list__text">L</span>
+                </button>
+              </li>
+              <li class="size-list__item">
+                <button class="size-list__button size-list__button--xl" type="button">
+                  <span class="size-list__text">XL</span>
+                </button>
+              </li>
+            </ul>
+            <a href="#">Size guide</a>
+          </div>
+
+          <!-- Количество -->
+          <div class="parameters__quantity">
+            <h4 class="parameters-title">Quantity</h4>
+            <div class="parameters__quantity-wrapper quantity">
+              <button class="quantity__button quantity__button--remove" type="button">
+                <span class="visually-hidden">Reduce the quantity of goods</span>
+              </button>
+              <span class="quantity__text">1</span>
+              <button class="quantity__button quantity__button--add" type="button">
+                <span class="visually-hidden">Increase the quantity of goods</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Стоимость -->
+          <div class="parameters__cost cost">
+            <h4 class="parameters-title">Cost</h4>
+            <p class="cost__text">$120.00</p>
+          </div>
+        </div>
+
+        <div class="parameters__details details">
+          <h4 class="parameters-title">Product details</h4>
+          <p class="details__text">
+            Look out for its standout party dresses, feminine details,
+            statement jackets and cool denim including skinny-cut jeans and
+            cute denim shorts, which sit alongside its directional footwear
+            and swimwear ranges.
+          </p>
+          <p class="details__consist">63% Viscose, 37% Polyamide.</p>
+        </div>
+      </section>
+      <button class="new-collection__button" type="button">Order now</button>
+    </section>
+
+    <section class="page-product__services services">
+      <h2 class="visually-hidden">Services</h2>
+      <div class="services__delivery">
+        <h3 class="services__text">Delivery</h3>
+      </div>
+      <div class="services__return">
+        <h3 class="services__text">Return</h3>
+      </div>
+    </section>
+
+    <section class="similar-collections">
+      <h2 class="visually-hidden">
+        Similar collections that might interest you
+      </h2>
+      <h3 class="visually-hidden">List of collections</h3>
+      <h4 class="parameters-title">Similar Collections</h4>
+      <ul class="similar-collections__list collections-list">
+        <li class="collections-list__item">
+          <img src="img/kingsman-style.jpg" width="288" height="160" alt="The first product." />
+          <h5 class="collections-list__item-title">Kingsman style</h5>
+          <p class="collections-list__item-description">
+            More silk, more freedom
+          </p>
+        </li>
+        <li class="collections-list__item">
+          <img src="img/denim-goddess.jpg" width="288" height="160" alt="The first product." />
+          <h5 class="collections-list__item-title">Denim goddess</h5>
+          <p class="collections-list__item-description">
+            More denim, more freedom
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="subscription">
+      <h2 class="visually-hidden">Subscribing</h2>
+      <form class="subscription__form form" action="http://echo.htmlacademy.ru" method="post">
+        <h3 class="form__title">Subscribe our newsletter</h3>
+        <p class="form__description">Get notified about new collections
+          of Gussi Store</p>
+
+        <fieldset class="form__fieldset fieldset fieldset--personality">
+          <legend class="visually-hidden">
+            Enter your personal data </legend>
+          <div class="fieldset__container">
+            <label class="visually-hidden">Your name</label>
+            <input class="fieldset__container-input" type="text" name="name" value="Enter your name" required>
+          </div>
+          <div class="fieldset__container">
+            <label class="visually-hidden">Your e-mail</label>
+            <input class="fieldset__container-input" type="email" name="email" value="Enter your e-mail" required>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset fieldset fieldset--gender">
+          <legend class="fieldset__title">Choose your gender:</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item-radio">
+              <label class="fieldset__control">
+                <input class="visually-hidden fieldset__control-radio" type="radio" name="gender" value="male" checked>
+                <span class="fieldset__control-mark fieldset__control-mark--radio"></span>
+                <span class="fieldset__control-label">Male</span>
+              </label>
+            </li>
+            <li class="fieldset__item-radio">
+              <label class="fieldset__control">
+                <input class="visually-hidden fieldset__control-redio" type="radio" name="gender" value="female">
+                <span class="fieldset__control-mark fieldset__control-mark--radio" </span>
+                  <span class="fieldset__control-label">Female</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset fieldset fieldset--details">
+          <legend class="visually-hidden">Details</legend>
+          <div class="fieldset__container">
+            <label class="fieldset__control">
+              <input class="visually-hidden fieldset__control-checkbox" type="checkbox" name="details" checked>
+              <span class="fieldset__control-mark fieldset__control-mark--checkbox"></span>
+              <span class="fieldset__control-label">Look out for its standout party dresses,
+                feminine details</span>
+            </label>
+          </div>
+        </fieldset>
+        <button class="form__button button" type="submit">Subscribe Gussi</button>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
