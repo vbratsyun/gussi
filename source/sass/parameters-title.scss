@@ -1,0 +1,45 @@
+.parameters-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $gray;
+  margin: 8px 0;
+
+  &--color {
+    margin-top: 3px;
+    margin-bottom: 11px;
+  }
+
+  &--size {
+    margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 3px;
+    }
+  }
+
+  &--fashion {
+    margin-bottom: 16px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 23px;
+    }
+  }
+
+  &--quantity {
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+
+  &--cost {
+    margin-top: 4px;
+    margin-bottom: 5px;
+  }
+
+  &--details {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 6px;
+    }
+  }
+}

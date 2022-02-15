@@ -1,17 +1,28 @@
 // Начните писать стили ;
 // Global
-// @import "global/variables.scss";
-// @import "global/fonts.scss";
-// @import "global/visually-hidden.scss";
-// @import "global/img.scss";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/visually-hidden.scss";
+@import "global/img.scss";
 
 // Blocks
 @import "page.scss";
-// @import "blocks/page-header.scss";
-// @import "blocks/page-nav.scss";
-// @import "blocks/page-main.scss";
-// @import "blocks/intro.scss";
-// @import "blocks/promo.scss";
-// @import "blocks/advantage.scss";
-// @import "blocks/search.scss";
-// @import "blocks/page-footer.scss";
+@import "page-product.scss";
+@import "new-collection.scss";
+@import "carousel.scss";
+@import "controls.scss";
+@import "product-info.scss";
+@import "parameters.scss";
+@import "fashion.scss";
+@import "colour-list.scss";
+@import "size-list.scss";
+@import "parameters-title.scss";
+@import "quantity.scss";
+@import "cost.scss";
+@import "details.scss";
+@import "services.scss";
+@import "collections-list.scss";
+@import "similar-collections.scss";
+@import "subscription.scss";
+@import "form.scss";
+@import "fieldset.scss";

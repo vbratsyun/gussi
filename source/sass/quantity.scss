@@ -1,0 +1,45 @@
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity__button {
+  border: 1px solid transparent;
+  outline: none;
+  background-color: transparent;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &--remove {
+    background: url("../img/quantity-button-remove.svg") no-repeat center;
+  }
+
+  &--add {
+    background: url("../img/quantity-button-add.svg") no-repeat center;
+  }
+
+  &:focus {
+    @include focus-border();
+  }
+}
+
+.quantity__text {
+  @include input();
+
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $gray;
+  font-family: inherit;
+  max-width: 46px;
+  text-align: center;
+  appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+}

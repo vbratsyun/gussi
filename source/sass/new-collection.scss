@@ -1,0 +1,51 @@
+.new-collection {
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    gap: 92px;
+    margin-bottom: 64px;
+  }
+}
+
+.new-collection__carousel {
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
+}
+
+.new-collection__wrapper {
+  margin: 0 16px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/-1;
+    margin: 0 52px 0 0;
+  }
+}
+
+.new-collection__button {
+  @include button();
+
+  padding: 11px;
+  margin-bottom: 23px;
+  outline: none;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+  }
+
+  &:hover {
+    @include hover-button();
+  }
+
+  &:focus {
+    @include focus-border();
+  }
+
+  &:active {
+    @include active-button();
+  }
+}

@@ -1,0 +1,27 @@
+.details__text {
+  font-weight: 500;
+  color: $vio;
+  opacity: 0.8;
+  margin: 0;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 96%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 99%;
+  }
+}
+
+.details__consist {
+  font-weight: 500;
+  line-height: 20px;
+  color: $gray;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
+}

@@ -1,0 +1,62 @@
+// Colors
+$white: #ffffff;
+$gray: #8a94a6;
+$vio: #192b3f;
+$brown: #c9b8a8;
+$focus: #b8814e;
+$hover: #2e4055;
+$active: #3b536d;
+
+// Viewports
+$desktop-width: 1360px;
+$tablet-width: 720px;
+$mobile-width-only: 320px;
+
+@mixin link {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+@mixin list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin button {
+  display: block;
+  border: 1px solid transparent;
+  background-color: $vio;
+  margin: 0;
+  color: $white;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: inherit;
+  font-weight: 500;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+@mixin input {
+  cursor: pointer;
+  outline: none;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+@mixin focus-border {
+  border-color: $focus;
+  border-width: 2px;
+}
+
+@mixin hover-button {
+  background-color: $hover;
+}
+
+@mixin active-button {
+  background-color: $active;
+}
