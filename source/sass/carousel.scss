@@ -1,0 +1,58 @@
+.carousel {
+  position: relative;
+
+  &::after {
+    content: "";
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.22) 0,
+      rgba(53, 41, 37, 0.5) 100%
+    );
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 193px;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: fixed;
+  }
+}
+
+.carousel__header-logo {
+  @include link();
+
+  width: 65px;
+  height: 36px;
+  margin: 24px 0 0 16px;
+  position: absolute;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  background: url("../img/logo.svg") no-repeat;
+  background-size: cover;
+
+  &:focus {
+    @include focus-border();
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 32px 0 0 52px;
+    width: 95px;
+    height: 53px;
+  }
+}
+
+.carousel__controls {
+  position: absolute;
+  z-index: 1;
+  bottom: 4.5%;
+  left: 16px;
+
+  @media (min-width: $desktop-width) {
+    left: 52px;
+    top: 704px;
+    bottom: 0;
+  }
+}

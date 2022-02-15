@@ -1,0 +1,82 @@
+.services {
+  margin-bottom: 40px;
+}
+
+.services__block {
+  padding-bottom: 8px;
+  position: relative;
+  padding-top: 15px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e1e6ed;
+  }
+}
+
+.services__link {
+  @include link();
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: $vio;
+  display: grid;
+  grid-template-columns: 1fr 12px;
+  align-items: center;
+  outline: none;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url("../img/quantity-button-add.svg") no-repeat center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 10px;
+  }
+}
+
+.services__container {
+  display: none;
+}
+
+.services__text {
+  margin: 0;
+  color: $gray;
+  text-align: justify;
+
+  &--note {
+    margin-bottom: 16px;
+  }
+}
+
+.services__block:hover .services__link {
+  &::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url("../img/quantity-button-remove.svg") no-repeat center;
+  }
+}
+
+.services__block:hover .services__container {
+  display: block;
+}
+
+.services__link:focus {
+  @include focus-border();
+}
+
+.services__block:focus-within .services__container {
+  display: block;
+}
