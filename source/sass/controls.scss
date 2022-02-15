@@ -1,0 +1,43 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.controls__button {
+  @include button();
+
+  width: 32px;
+  height: 32px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 0;
+  position: relative;
+
+  &:hover {
+    border-color: $white;
+  }
+
+  &:focus {
+    @include focus-border();
+    background-color: transparent;
+  }
+
+  &:active {
+    background-color: $white;
+    border-color: $white;
+  }
+}
+
+.controls__button:active .controls__button-icon {
+  fill: $gray;
+}
+
+.controls__button-next {
+  transform: scale(-1);
+}

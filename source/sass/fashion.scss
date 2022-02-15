@@ -1,0 +1,33 @@
+.fashion__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  color: $vio;
+  margin: 0;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+.fashion__description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: $gray;
+  opacity: 0.8;
+  margin: 0;
+  width: 99%;
+
+  @media (min-width: $tablet-width) {
+    width: 91%;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 383px;
+  }
+}
