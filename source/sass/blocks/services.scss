@@ -40,13 +40,29 @@
     background: url("../img/quantity-button-add.svg") no-repeat center;
   }
 
+  &--opened {
+    &::after {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: url("../img/quantity-button-remove.svg") no-repeat center;
+  }
+  }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 10px;
   }
 }
 
+
+
 .services__container {
   display: none;
+
+  &--opened {
+    display: block;
+  }
 }
 
 .services__text {
@@ -59,24 +75,24 @@
   }
 }
 
-.services__block:hover .services__link {
-  &::after {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    background: url("../img/quantity-button-remove.svg") no-repeat center;
-  }
-}
+// .services__block:hover .services__link {
+//   &::after--opened {
+//     content: "";
+//     display: block;
+//     width: 10px;
+//     height: 10px;
+//     background: url("../img/quantity-button-remove.svg") no-repeat center;
+//   }
+// }
 
-.services__block:hover .services__container {
-  display: block;
-}
+// .services__block:hover .services__container {
+//   display: block;
+// }
 
 .services__link:focus {
   @include focus-border();
 }
 
-.services__block:focus-within .services__container {
-  display: block;
-}
+// .services__block:focus-within .services__container {
+//   display: block;
+// }
