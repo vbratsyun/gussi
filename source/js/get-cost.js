@@ -23,6 +23,6 @@ const onButtonAddClick = () => {
 
 buttonRemove.addEventListener("click", onButtonRemoveClick);
 buttonAdd.addEventListener("click", onButtonAddClick);
-.addEventListener('load', () => {
+window.addEventListener('load', () => {
     costDozens.textContent = quantityInput.value*120;
 })
