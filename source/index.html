@@ -295,193 +295,207 @@
             </div>
 
             <!-- Общие параметры -->
-            <form class="parameters__container" action="http://echo.htmlacademy.ru" method="post">
-              <div class="parameters__container-color-size">
-                <!-- Цвет -->
-                <div class="parameters__colour">
-                  <h4 class="parameters-title parameters-title--color">
-                    Colour
-                  </h4>
-                  <ul class="parameters__colour-list colour-list">
-                    <li class="colour-list__item">
-                      <label class="colour-list__control">
-                        <input
-                          class="visually-hidden colour-list__control-radio"
-                          type="radio"
-                          name="colour"
-                          value="dark-blue"
-                          checked
-                        />
-                        <span class="colour-list__control-mark"> </span>
-                        <span class="visually-hidden">Dark blue</span></label
-                      >
-                    </li>
-                    <li class="colour-list__item">
-                      <label class="colour-list__control">
-                        <input
-                          class="visually-hidden colour-list__control-radio"
-                          type="radio"
-                          name="colour"
-                          value="dark-blue"
-                        />
-                        <span
-                          class="colour-list__control-mark colour-list__control-mark--gray"
-                        >
-                        </span>
-                        <span class="visually-hidden">Gray</span></label
-                      >
-                    </li>
-                    <li class="colour-list__item">
-                      <label class="colour-list__control">
-                        <input
-                          class="visually-hidden colour-list__control-radio"
-                          type="radio"
-                          name="colour"
-                          value="dark-blue"
-                        />
-                        <span
-                          class="colour-list__control-mark colour-list__control-mark--blue"
-                        >
-                        </span>
-                        <span class="visually-hidden">Blue</span></label
-                      >
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Размер -->
-                <div class="parameters__size">
-                  <h4 class="parameters-title parameters-title--size">Size</h4>
-                  <div class="parameters__size-wrapper">
-                    <ul class="parameters__size-list size-list">
-                      <li class="size-list__item">
-                        <label class="size-list__control">
+            <form
+              class="parameters__form"
+              action="http://echo.htmlacademy.ru"
+              method="post"
+            >
+              <div class="parameters__container">
+                <div class="parameters__container-color-size">
+                  <!-- Цвет -->
+                  <div class="parameters__colour">
+                    <h4 class="parameters-title parameters-title--color">
+                      Colour
+                    </h4>
+                    <ul class="parameters__colour-list colour-list">
+                      <li class="colour-list__item">
+                        <label class="colour-list__control">
                           <input
-                            class="visually-hidden size-list__control-radio"
+                            class="visually-hidden colour-list__control-radio"
                             type="radio"
-                            name="size"
-                            value="XS"
-                          />
-                          <span class="size-list__control-mark"></span>
-                          <span
-                            class="size-list__control-label size-list__control-label--xs"
-                            >XS</span
-                          >
-                        </label>
-                      </li>
-                      <li class="size-list__item">
-                        <label class="size-list__control">
-                          <input
-                            class="visually-hidden size-list__control-radio"
-                            type="radio"
-                            name="size"
-                            value="S"
+                            name="colour"
+                            value="dark-blue"
                             checked
                           />
-                          <span class="size-list__control-mark"></span>
-                          <span
-                            class="size-list__control-label size-list__control-label--s"
-                            >S</span
-                          >
-                        </label>
+                          <span class="colour-list__control-mark"> </span>
+                          <span class="visually-hidden">Dark blue</span></label
+                        >
                       </li>
-                      <li class="size-list__item">
-                        <label class="size-list__control">
+                      <li class="colour-list__item">
+                        <label class="colour-list__control">
                           <input
-                            class="visually-hidden size-list__control-radio"
+                            class="visually-hidden colour-list__control-radio"
                             type="radio"
-                            name="size"
-                            value="M"
+                            name="colour"
+                            value="dark-blue"
                           />
-                          <span class="size-list__control-mark"></span>
                           <span
-                            class="size-list__control-label size-list__control-label--m"
-                            >M</span
+                            class="colour-list__control-mark colour-list__control-mark--gray"
                           >
-                        </label>
+                          </span>
+                          <span class="visually-hidden">Gray</span></label
+                        >
                       </li>
-                      <li class="size-list__item">
-                        <label class="size-list__control">
+                      <li class="colour-list__item">
+                        <label class="colour-list__control">
                           <input
-                            class="visually-hidden size-list__control-radio"
+                            class="visually-hidden colour-list__control-radio"
                             type="radio"
-                            name="size"
-                            value="L"
+                            name="colour"
+                            value="dark-blue"
                           />
-                          <span class="size-list__control-mark"></span>
                           <span
-                            class="size-list__control-label size-list__control-label--l"
-                            >L</span
+                            class="colour-list__control-mark colour-list__control-mark--blue"
                           >
-                        </label>
-                      </li>
-                      <li class="size-list__item">
-                        <label class="size-list__control">
-                          <input
-                            class="visually-hidden size-list__control-radio"
-                            type="radio"
-                            name="size"
-                            value="XL"
-                            disabled
-                          />
-                          <span class="size-list__control-mark"></span>
-                          <span
-                            class="size-list__control-label size-list__control-label--xl"
-                            >XL</span
-                          >
-                        </label>
+                          </span>
+                          <span class="visually-hidden">Blue</span></label
+                        >
                       </li>
                     </ul>
-                    <div class="parameters__size-container">
-                      <a class="parameters__size-link">Size guide</a>
+                  </div>
+
+                  <!-- Размер -->
+                  <div class="parameters__size">
+                    <h4 class="parameters-title parameters-title--size">
+                      Size
+                    </h4>
+                    <div class="parameters__size-wrapper">
+                      <ul class="parameters__size-list size-list">
+                        <li class="size-list__item">
+                          <label class="size-list__control">
+                            <input
+                              class="visually-hidden size-list__control-radio"
+                              type="radio"
+                              name="size"
+                              value="XS"
+                            />
+                            <span class="size-list__control-mark"></span>
+                            <span
+                              class="size-list__control-label size-list__control-label--xs"
+                              >XS</span
+                            >
+                          </label>
+                        </li>
+                        <li class="size-list__item">
+                          <label class="size-list__control">
+                            <input
+                              class="visually-hidden size-list__control-radio"
+                              type="radio"
+                              name="size"
+                              value="S"
+                              checked
+                            />
+                            <span class="size-list__control-mark"></span>
+                            <span
+                              class="size-list__control-label size-list__control-label--s"
+                              >S</span
+                            >
+                          </label>
+                        </li>
+                        <li class="size-list__item">
+                          <label class="size-list__control">
+                            <input
+                              class="visually-hidden size-list__control-radio"
+                              type="radio"
+                              name="size"
+                              value="M"
+                            />
+                            <span class="size-list__control-mark"></span>
+                            <span
+                              class="size-list__control-label size-list__control-label--m"
+                              >M</span
+                            >
+                          </label>
+                        </li>
+                        <li class="size-list__item">
+                          <label class="size-list__control">
+                            <input
+                              class="visually-hidden size-list__control-radio"
+                              type="radio"
+                              name="size"
+                              value="L"
+                            />
+                            <span class="size-list__control-mark"></span>
+                            <span
+                              class="size-list__control-label size-list__control-label--l"
+                              >L</span
+                            >
+                          </label>
+                        </li>
+                        <li class="size-list__item">
+                          <label class="size-list__control">
+                            <input
+                              class="visually-hidden size-list__control-radio"
+                              type="radio"
+                              name="size"
+                              value="XL"
+                              disabled
+                            />
+                            <span class="size-list__control-mark"></span>
+                            <span
+                              class="size-list__control-label size-list__control-label--xl"
+                              >XL</span
+                            >
+                          </label>
+                        </li>
+                      </ul>
+                      <div class="parameters__size-container">
+                        <a class="parameters__size-link">Size guide</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="parameters__wrapper">
-                <!-- Количество -->
-                <div class="parameters__quantity">
-                  <h4 class="parameters-title parameters-title--quantity">
-                    Quantity
-                  </h4>
-                  <div class="parameters__quantity-wrapper quantity">
-                    <button
-                      class="quantity__button quantity__button--remove"
-                      type="button"
-                    >
-                      <span class="visually-hidden"
-                        >Reduce the quantity of goods</span
+                <div class="parameters__wrapper">
+                  <!-- Количество -->
+                  <div class="parameters__quantity">
+                    <h4 class="parameters-title parameters-title--quantity">
+                      Quantity
+                    </h4>
+                    <div class="parameters__quantity-wrapper quantity">
+                      <button
+                        class="quantity__button quantity__button--remove"
+                        type="button"
                       >
-                    </button>
-                    <input
-                      class="quantity__text"
-                      name="quantity"
-                      type="quantity"
-                      value="1"
-                      min="1"
-                      style="max-width: 46px"
-                      required
-                    />
-                    <button
-                      class="quantity__button quantity__button--add"
-                      type="button"
-                    >
-                      <span class="visually-hidden"
-                        >Increase the quantity of goods</span
+                        <span class="visually-hidden"
+                          >Reduce the quantity of goods</span
+                        >
+                      </button>
+                      <input
+                        class="quantity__text"
+                        name="quantity"
+                        type="quantity"
+                        value="1"
+                        min="1"
+                        style="max-width: 46px"
+                        required
+                      />
+                      <button
+                        class="quantity__button quantity__button--add"
+                        type="button"
                       >
-                    </button>
+                        <span class="visually-hidden"
+                          >Increase the quantity of goods</span
+                        >
+                      </button>
+                    </div>
                   </div>
-                </div>
 
-                <!-- Стоимость -->
-                <div class="parameters__cost cost">
-                  <h4 class="parameters-title parameters-title--cost">Cost</h4>
-                  <p class="cost__text">
-                    <span>$</span><span class="cost__text-dozens">120</span
-                    ><span class="cost__text-hundredth">.00</span>
-                  </p>
-                  <input class="visually-hidden cost__total-amount" type="text" name="cost">
+                  <!-- Стоимость -->
+                  <div class="parameters__cost cost">
+                    <h4 class="parameters-title parameters-title--cost">
+                      Cost
+                    </h4>
+                    <p class="cost__text">
+                      <span>$</span><span class="cost__text-dozens">120</span
+                      ><span class="cost__text-hundredth">.00</span>
+                    </p>
+                    <input
+                      class="visually-hidden cost__total-amount"
+                      type="text"
+                      name="cost"
+                    />
+                  </div>
                 </div>
               </div>
               <div class="parameters__details details">
@@ -490,9 +504,9 @@
                 </h4>
                 <p class="details__text">
                   Look out for its standout party dresses, feminine details,
-                  statement jackets and cool denim including skinny-cut jeans and
-                  cute denim shorts, which sit alongside its directional footwear
-                  and swimwear ranges.
+                  statement jackets and cool denim including skinny-cut jeans
+                  and cute denim shorts, which sit alongside its directional
+                  footwear and swimwear ranges.
                 </p>
                 <p class="details__consist">63% Viscose, 37% Polyamide.</p>
               </div>
@@ -500,7 +514,6 @@
                 Order now
               </button>
             </form>
-
           </section>
 
           <section class="services">
