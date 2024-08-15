@@ -24,21 +24,22 @@
 .carousel__header-logo {
   @include link();
 
-  width: 65px;
-  height: 36px;
-  margin: 24px 0 0 16px;
-  position: absolute;
-  border: 1px solid transparent;
-  box-sizing: border-box;
-  background: url("../img/logo.svg") no-repeat;
-  background-size: cover;
-
-  &:focus {
+  &:focus .carousel__header-image {
     @include focus-border();
   }
+}
+
+.carousel__header-image {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  width: 65px;
+  height: 36px;
+  border: 1px solid transparent;
 
   @media (min-width: $desktop-width) {
-    margin: 32px 0 0 52px;
+    top: 32px;
+    left: 52px;
     width: 95px;
     height: 53px;
   }

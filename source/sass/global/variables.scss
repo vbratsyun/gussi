@@ -44,7 +44,7 @@ $mobile-width-only: 320px;
 @mixin input {
   cursor: pointer;
   outline: none;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   box-sizing: border-box;
 }
 

@@ -133,12 +133,8 @@
 
 .fieldset__control-mark-icon {
   position: absolute;
-  top: 5px;
+  top: 7px;
   left: 5px;
-
-  @media (min-width: $tablet-width) {
-    top: 7px;
-  }
 
   @media (min-width: $desktop-width) {
     top: 5px;
@@ -161,37 +157,12 @@
   color: $focus;
 }
 
+
 .fieldset__control-checkbox[type="checkbox"]:checked + .fieldset__control-mark--checkbox {
   background-color: $vio;
   border-color: transparent;
 }
 
 .fieldset__control-checkbox[type="checkbox"]:checked ~ .fieldset__control-mark-icon {
-  fill: $white;
-}
-
-.fieldset__control-checkbox[type="checkbox"]:hover + .fieldset__control-mark--checkbox {
-  border-color: $vio;
-  background-color: transparent;
-}
-
-.fieldset__control-checkbox[type="checkbox"]:hover ~ .fieldset__control-mark-icon {
-  fill: $gray;
-}
-
-.fieldset__control-checkbox[type="checkbox"]:focus + .fieldset__control-mark--checkbox {
-  @include focus-border();
-  background-color: transparent;
-}
-
-.fieldset__control-checkbox[type="checkbox"]:focus ~ .fieldset__control-mark-icon {
-  fill: $focus;
-}
-
-.fieldset__control-checkbox[type="checkbox"]:active + .fieldset__control-mark--checkbox {
-  background-color: $vio;
-}
-
-.fieldset__control-checkbox[type="checkbox"]:active ~ .fieldset__control-mark-icon {
   fill: $white;
 }

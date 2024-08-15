@@ -2,13 +2,9 @@
   @include list();
 }
 
-.product-info__list-item {
+.product-info__list-item:not(:nth-of-type(1)) {
   background-color: $vio;
-
-  &--second,
-  &--third {
     display: none;
-  }
 }
 
 .product-info__image {
@@ -16,8 +12,16 @@
   width: 100%;
   height: 600px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: 932px) {
     height: 768px;
+    width: 100%;
+
+    &--light-coat {
+      object-position: 0 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
     width: 600px;
   }
 }
