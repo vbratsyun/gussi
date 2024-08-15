@@ -120,15 +120,13 @@
                   </p>
                 </div>
               </li>
-              <li
-                class="product-info__list-item"
-              >
+              <li class="product-info__list-item">
                 <picture>
                   <source
                     type="image/webp"
                     media="(min-width: 1360px)"
                     srcset="
-                      img/carousel/sandy-longsleeve-desktop.webp   1x,
+                      img/carousel/sandy-longsleeve-desktop.webp    1x,
                       img/carousel/sandy-longsleeve-desktop@2x.webp 2x
                     "
                   />
@@ -136,14 +134,14 @@
                     type="image/webp"
                     media="(min-width: 342px)"
                     srcset="
-                      img/carousel/sandy-longsleeve-tablet.webp   1x,
+                      img/carousel/sandy-longsleeve-tablet.webp    1x,
                       img/carousel/sandy-longsleeve-tablet@2x.webp 2x
                     "
                   />
                   <source
                     type="image/webp"
                     srcset="
-                      img/carousel/sandy-longsleeve-mobile.webp   1x,
+                      img/carousel/sandy-longsleeve-mobile.webp    1x,
                       img/carousel/sandy-longsleeve-mobile@2x.webp 2x
                     "
                   />
@@ -182,9 +180,7 @@
                   </p>
                 </div>
               </li>
-              <li
-                class="product-info__list-item"
-              >
+              <li class="product-info__list-item">
                 <picture>
                   <source
                     type="image/webp"
@@ -299,7 +295,7 @@
             </div>
 
             <!-- Общие параметры -->
-            <div class="parameters__container">
+            <form class="parameters__container" action="http://echo.htmlacademy.ru" method="post">
               <div class="parameters__container-color-size">
                 <!-- Цвет -->
                 <div class="parameters__colour">
@@ -460,8 +456,9 @@
                     </button>
                     <input
                       class="quantity__text"
-                      type="number"
-                      placeholder="1"
+                      name="quantity"
+                      type="quantity"
+                      value="1"
                       min="1"
                       style="max-width: 46px"
                       required
@@ -481,28 +478,30 @@
                 <div class="parameters__cost cost">
                   <h4 class="parameters-title parameters-title--cost">Cost</h4>
                   <p class="cost__text">
-                    $120<span class="cost__text-hundredth">.00</span>
+                    <span>$</span><span class="cost__text-dozens">120</span
+                    ><span class="cost__text-hundredth">.00</span>
                   </p>
+                  <input class="visually-hidden cost__total-amount" type="text" name="cost">
                 </div>
               </div>
-            </div>
+              <div class="parameters__details details">
+                <h4 class="parameters-title parameters-title--details">
+                  Product details
+                </h4>
+                <p class="details__text">
+                  Look out for its standout party dresses, feminine details,
+                  statement jackets and cool denim including skinny-cut jeans and
+                  cute denim shorts, which sit alongside its directional footwear
+                  and swimwear ranges.
+                </p>
+                <p class="details__consist">63% Viscose, 37% Polyamide.</p>
+              </div>
+              <button class="new-collection__button" type="submit">
+                Order now
+              </button>
+            </form>
 
-            <div class="parameters__details details">
-              <h4 class="parameters-title parameters-title--details">
-                Product details
-              </h4>
-              <p class="details__text">
-                Look out for its standout party dresses, feminine details,
-                statement jackets and cool denim including skinny-cut jeans and
-                cute denim shorts, which sit alongside its directional footwear
-                and swimwear ranges.
-              </p>
-              <p class="details__consist">63% Viscose, 37% Polyamide.</p>
-            </div>
           </section>
-          <button class="new-collection__button" type="button">
-            Order now
-          </button>
 
           <section class="services">
             <h2 class="visually-hidden">Services</h2>
@@ -652,7 +651,7 @@
                 class="visually-hidden fieldset__control-checkbox"
                 type="checkbox"
                 name="details"
-                checked
+                <!-- checked -->
               />
               <span
                 class="fieldset__control-mark fieldset__control-mark--checkbox"
@@ -681,5 +680,6 @@
     </footer>
     <script src="js/carousel.js"></script>
     <script src="js/services-link-opened.js"></script>
+    <script src="js/get-cost.js"></script>
   </body>
 </html>
