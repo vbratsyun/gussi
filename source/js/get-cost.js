@@ -25,4 +25,4 @@ buttonRemove.addEventListener("click", onButtonRemoveClick);
 buttonAdd.addEventListener("click", onButtonAddClick);
 window.addEventListener('load', () => {
     costDozens.textContent = quantityInput.value*120;
-})
+});

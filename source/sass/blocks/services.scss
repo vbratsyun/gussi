@@ -40,22 +40,20 @@
     background: url("../img/quantity-button-add.svg") no-repeat center;
   }
 
-  &--opened {
-    &::after {
-      content: "";
-      display: block;
-      width: 10px;
-      height: 10px;
-      background: url("../img/quantity-button-remove.svg") no-repeat center;
-  }
-  }
-
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 10px;
   }
 }
 
-
+.services__link--opened {
+  &::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url("../img/quantity-button-remove.svg") no-repeat center;
+  }
+}
 
 .services__container {
   display: none;
